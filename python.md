@@ -127,18 +127,14 @@ display_info('John', 25)
 
  * logging = keeping track about how many times function was called (and what types
  of arguments)
- * timer = measure execution time
+ * timer = measure execution time of functions
 
 
  * __name__ now returns correct file name
 
 # MIXED #
 
-np.asarray(['I am going to the bar tonight', 'I love you')
+np.asarray(['string 1', 'string 2')
 
 z = [1, 2, 3]
 sort(z, reverse=True)
-
-* Mit Hilfe von Lambda-Funktionen können Funktionen direkt
-* als Parameter übergeben werden
-lambda x: x * x * x
