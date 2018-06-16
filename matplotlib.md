@@ -20,6 +20,18 @@ for tick in ax.yaxis.get_major_ticks():
 * Legend
   * ```pl.legend(loc=0)```
 
+* Multiclass scatter plot
+
+``` python
+colors = ('c', 'm', 'r', 'g', 'b', 'k', 'y') * 3
+markers = ('o', 's', 'd', 'o', '<', '>', '^', 'p') * 3
+for cid in np.arange(num_classes):
+    idx = class_id == cid
+    plt.scatter(mat[idx, 0], mat[idx, 1], label=class_label[cid], c=colors[cid], marker=markers[cid], alpha= .2 if cid == 0 else .8, s=25)
+plt.gca().legend(loc=0, fontsize=8, scatterpoints=1)
+
+```
+
 
 # Seaborn  / Pandas
 
